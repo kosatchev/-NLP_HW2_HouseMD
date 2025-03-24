@@ -1,0 +1,60 @@
+# Игнорируем Python-файлы
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyc
+
+# Игнорируем виртуальные окружения
+venv/
+env/
+.venv/
+
+# Игнорируем файлы данных (если они большие)
+# data/raw/
+# data/processed/
+
+# Игнорируем модели (если они большие)
+# models/
+
+# Игнорируем логи и временные файлы
+*.log
+*.tmp
+*.bak
+
+# Игнорируем IDE-файлы
+.vscode/
+.idea/
+
+# Игнорируем Docker-файлы
+docker-compose.override.yml
+
+# Игнорируем файлы окружения
+.env
+
+# Игнорируем Jupyter Notebook
+.ipynb_checkpoints/
+# *.ipynb
+
+# Игнорируем macOS системные файлы
+.DS_Store
+
+# Игнорируем скомпилированные файлы
+*.so
+*.o
+*.a
+
+# Игнорируем кэш pip
+.pip-cache/
+
+# Игнорируем кэш PyInstaller
+*.spec
+build/
+dist/
+
+# Игнорируем кэш pytest
+.pytest_cache/
+
+# Игнорируем кэш coverage
+.coverage
+htmlcov/

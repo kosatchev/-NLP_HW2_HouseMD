@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="header-content">
+                <h1>House MD</h1>
+                <div class="status-indicator">
+                    <span class="connection-dot"></span>
+                    <span>Online</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="chat-container">
+            <div class="message-list" id="messageList"></div>
+            
+            <div class="typing-indicator" id="typingIndicator">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </main>
+
+        <footer class="input-container">
+            <div class="input-wrapper">
+                <textarea 
+                    id="userInput" 
+                    placeholder="Напишите ваш вопрос..." 
+                    rows="1"
+                    autofocus
+                ></textarea>
+                <button class="send-button" onclick="sendMessage()">
+                    <span class="material-icons">send</span>
+                </button>
+            </div>
+            <div class="hint-text">Пишите по-английски | вежливости не ждите</div>
+        </footer>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

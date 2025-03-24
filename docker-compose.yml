@@ -1,0 +1,9 @@
+services:
+  web-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: house-md
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
