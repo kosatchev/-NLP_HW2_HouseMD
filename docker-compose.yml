@@ -5,5 +5,5 @@ services:
       dockerfile: Dockerfile
     container_name: house-md
     ports:
-      - "8080:8080"
+      - "8008:8008"
     restart: unless-stopped
