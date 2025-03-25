@@ -2,7 +2,6 @@ from fastapi import FastAPI, HTTPException
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
-import torch
 from transformers import GPT2Tokenizer, GPT2LMHeadModel
 import logging
 from functools import lru_cache
@@ -169,3 +168,4 @@ if __name__ == "__main__":
         port=8008,
         log_config=None
     )
+    
